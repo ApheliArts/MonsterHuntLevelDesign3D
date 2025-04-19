@@ -119,12 +119,180 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< Updated upstream:Assets/Scenes/Test.unity
 --- !u!1 &400484153
 GameObject:
+=======
+--- !u!1001 &236589472
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2119775930974504096, guid: 212907312655a4443a025a304442c17c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2119775930974504096, guid: 212907312655a4443a025a304442c17c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2119775930974504096, guid: 212907312655a4443a025a304442c17c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2119775930974504096, guid: 212907312655a4443a025a304442c17c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2119775930974504096, guid: 212907312655a4443a025a304442c17c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2119775930974504096, guid: 212907312655a4443a025a304442c17c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2119775930974504096, guid: 212907312655a4443a025a304442c17c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2119775930974504096, guid: 212907312655a4443a025a304442c17c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2119775930974504096, guid: 212907312655a4443a025a304442c17c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2119775930974504096, guid: 212907312655a4443a025a304442c17c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5542111180780342640, guid: 212907312655a4443a025a304442c17c, type: 3}
+      propertyPath: far clip plane
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 5542111180780342640, guid: 212907312655a4443a025a304442c17c, type: 3}
+      propertyPath: orthographic size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6341998657737914590, guid: 212907312655a4443a025a304442c17c, type: 3}
+      propertyPath: GroundLayers.m_Bits
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8047161636021232021, guid: 212907312655a4443a025a304442c17c, type: 3}
+      propertyPath: m_Name
+      value: NestedParentCapsule_Unpack
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5542111180780342642, guid: 212907312655a4443a025a304442c17c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1880153442}
+  m_SourcePrefab: {fileID: 100100000, guid: 212907312655a4443a025a304442c17c, type: 3}
+--- !u!1001 &558004240
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 8c9aff9c5afb45d438364e850c292dd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.1793537
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8c9aff9c5afb45d438364e850c292dd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.8979826
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8c9aff9c5afb45d438364e850c292dd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.333242
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8c9aff9c5afb45d438364e850c292dd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8c9aff9c5afb45d438364e850c292dd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8c9aff9c5afb45d438364e850c292dd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8c9aff9c5afb45d438364e850c292dd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8c9aff9c5afb45d438364e850c292dd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8c9aff9c5afb45d438364e850c292dd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 8c9aff9c5afb45d438364e850c292dd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4738266766898685147, guid: 8c9aff9c5afb45d438364e850c292dd1, type: 3}
+      propertyPath: m_Name
+      value: Karkios_Body
+      objectReference: {fileID: 0}
+    - target: {fileID: -2800543106723041088, guid: 8c9aff9c5afb45d438364e850c292dd1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: a80bc9fa78cf5d849815b60d4afcca56, type: 3}
+    - target: {fileID: 919132149155446097, guid: 8c9aff9c5afb45d438364e850c292dd1, type: 3}
+      propertyPath: m_Name
+      value: Monster
+      objectReference: {fileID: 0}
+    - target: {fileID: 1966441833476683208, guid: 8c9aff9c5afb45d438364e850c292dd1, type: 3}
+      propertyPath: m_Name
+      value: Karkios_Horn
+      objectReference: {fileID: 0}
+    - target: {fileID: 2853768270042634523, guid: 8c9aff9c5afb45d438364e850c292dd1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: a80bc9fa78cf5d849815b60d4afcca56, type: 3}
+    - target: {fileID: 4386457097018674545, guid: 8c9aff9c5afb45d438364e850c292dd1, type: 3}
+      propertyPath: m_Name
+      value: Karkios_Fur
+      objectReference: {fileID: 0}
+    - target: {fileID: 4492686264197607916, guid: 8c9aff9c5afb45d438364e850c292dd1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: a80bc9fa78cf5d849815b60d4afcca56, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8c9aff9c5afb45d438364e850c292dd1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 836436938}
+  m_SourcePrefab: {fileID: 100100000, guid: 8c9aff9c5afb45d438364e850c292dd1, type: 3}
+--- !u!1 &836436937 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8c9aff9c5afb45d438364e850c292dd1, type: 3}
+  m_PrefabInstance: {fileID: 558004240}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &836436938
+Animator:
+  serializedVersion: 7
+>>>>>>> Stashed changes:Assets/Scenes/Natalie_Testing.unity
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream:Assets/Scenes/Test.unity
   serializedVersion: 6
   m_Component:
   - component: {fileID: 400484158}
@@ -276,6 +444,24 @@ MonoBehaviour:
   playerSpeed: 2
   gravityValue: -9.81
 --- !u!1 &1408443551
+=======
+  m_GameObject: {fileID: 836436937}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6db40635cad14fb44aa302dac534e844, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &1785587631
+>>>>>>> Stashed changes:Assets/Scenes/Natalie_Testing.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -533,7 +719,60 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+<<<<<<< Updated upstream:Assets/Scenes/Test.unity
 --- !u!1 &1819871912
+=======
+--- !u!1 &1880153440 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5542111180780342642, guid: 212907312655a4443a025a304442c17c, type: 3}
+  m_PrefabInstance: {fileID: 236589472}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1880153442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880153440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
+--- !u!1 &1961594201
+>>>>>>> Stashed changes:Assets/Scenes/Natalie_Testing.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -629,7 +868,14 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+<<<<<<< Updated upstream:Assets/Scenes/Test.unity
   - {fileID: 1819871915}
   - {fileID: 1691780118}
   - {fileID: 1408443556}
   - {fileID: 400484158}
+=======
+  - {fileID: 1785587633}
+  - {fileID: 1961594205}
+  - {fileID: 558004240}
+  - {fileID: 236589472}
+>>>>>>> Stashed changes:Assets/Scenes/Natalie_Testing.unity
