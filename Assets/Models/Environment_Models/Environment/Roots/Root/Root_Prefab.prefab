@@ -66,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: a50c9fa8293da794bbfbd45e03dfb547, type: 2}
     - target: {fileID: 919132149155446097, guid: 9ec9b748f764c9547954ecb40a817b88, type: 3}
       propertyPath: m_Name
-      value: Root_Model
+      value: Root_Prefab
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
