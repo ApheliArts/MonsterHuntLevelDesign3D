@@ -4,7 +4,9 @@ public class Player_Fight : MonoBehaviour
 {
     public FightStat Player;
     public FightStat Enemy;
-    public void PlayerAttack()
+
+    //Player Attack
+    void Update()
     {
         Enemy.TakeDamage(Player.damage);
     }

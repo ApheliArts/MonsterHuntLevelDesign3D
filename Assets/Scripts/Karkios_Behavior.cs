@@ -15,10 +15,6 @@ public class Karkios_Behavior : MonoBehaviour
         //Starts the game out with the Karkios in the ground.
         Karkios.GetComponent<Animator>().Play("Base Layer.Karkios_Flower");
     }
-    void Update()
-    {
-
-    }
     void OnTriggerEnter(Collider other)
     {
         //When the player enters the trigger the Karkios will transfer to its Emerge animation and attack the player.
