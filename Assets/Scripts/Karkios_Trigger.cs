@@ -1,0 +1,46 @@
+using System.Collections;
+using UnityEngine;
+using UnityEngine.UIElements;
+
+public class Karkios_Trigger : MonoBehaviour
+{
+    //Calls the public bool Rotate and Move variables from Karkios_Behavior script
+    public GameObject Karkios;
+
+    //public Karkios_Behavior Rotate;
+    //public Karkios_Behavior Move;
+
+    private void OnTriggerEnter(Collider other)
+    {
+        StartCoroutine(GetRotatedIdiot());
+    }
+    
+    //Start for the entire scene- cool intro :)
+    private IEnumerator GetRotatedIdiot()
+    {
+        //Start Flower Down Animation
+        Karkios.GetComponent<Animator>().CrossFadeInFixedTime("Base Layer.Karkios_FlowerDown", .5f);
+
+        yield return new WaitForSeconds(.33f);
+        Debug.Log("First Wait");
+
+        //Make Move and Rotate possible
+        Karkios.GetComponent<Karkios_Behavior>().Move = true;
+        Karkios.GetComponent<Karkios_Behavior>().Rotate = true;
+        Karkios.GetComponent<Animator>().CrossFadeInFixedTime("Base Layer.Karkios_Emerge", .5f);
+
+        yield return new WaitForSeconds(3);
+        Debug.Log("Second Wait");
+
+        //Make Move and Rotation not possible
+        Karkios.GetComponent<Karkios_Behavior>().Move = false;
+        Karkios.GetComponent<Karkios_Behavior>().Rotate = false;
+
+        yield return new WaitForSeconds(4);
+
+        //ROAR ^.=.^
+        Karkios.GetComponent<Animator>().Play("Base Layer.Karkios_Roar");
+
+        gameObject.SetActive(false);
+    }
+}
