@@ -8,6 +8,9 @@ public class Player_Fight : MonoBehaviour
     //Player Attack
     void Update()
     {
+        //Player Attack
         Enemy.TakeDamage(Player.damage);
+        //Player Dodge
+
     }
 }
