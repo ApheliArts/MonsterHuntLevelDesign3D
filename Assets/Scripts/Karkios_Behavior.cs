@@ -23,6 +23,9 @@ public class Karkios_Behavior : MonoBehaviour
     public bool isAttacking;
     public bool Idle;
 
+    public AudioSource Monster;
+    public AudioClip KarkiosRoar;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -88,5 +91,11 @@ public class Karkios_Behavior : MonoBehaviour
     {
         Move = false;
         Rotate = false;
+    }
+    //Sounds
+    public void Roar()
+    {
+        Monster.clip = KarkiosRoar;
+        Monster.Play();
     }
 }

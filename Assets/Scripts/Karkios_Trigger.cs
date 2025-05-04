@@ -29,14 +29,15 @@ public class Karkios_Trigger : MonoBehaviour
         Karkios.GetComponent<Karkios_Behavior>().Rotate = true;
         Karkios.GetComponent<Animator>().CrossFadeInFixedTime("Base Layer.Karkios_Emerge", .5f);
 
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1.8f);
         Debug.Log("Second Wait");
 
         //Make Move and Rotation not possible
         Karkios.GetComponent<Karkios_Behavior>().Move = false;
         Karkios.GetComponent<Karkios_Behavior>().Rotate = false;
 
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(6f);
+        Debug.Log("Third Wait");
 
         //ROAR ^.=.^
         Karkios.GetComponent<Animator>().Play("Base Layer.Karkios_Roar");
