@@ -12,6 +12,7 @@ public class animationStateController : MonoBehaviour
         animator = GetComponent<Animator>();
         isWalkingHash = Animator.StringToHash("isWalking");
         isRunningHash = Animator.StringToHash("isRunning");
+
     }
 
     // Update is called once per frame
@@ -22,11 +23,6 @@ public class animationStateController : MonoBehaviour
 
         bool isRunning = animator.GetBool(isRunningHash);
         bool runPressed = Input.GetKey("left shift");
-
-        if (!isWalking && forwardPressed)
-        {
-            animator.SetBool(isWalkingHash, true);
-        }
 
         if (isWalking && !forwardPressed)
         {
