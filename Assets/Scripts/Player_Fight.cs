@@ -9,7 +9,13 @@ public class Player_Fight : MonoBehaviour
     void Update()
     {
         //Player Attack
-        Enemy.TakeDamage(Player.damage);
+
+        if (Input.GetKey(KeyCode.Mouse0))
+        {
+            GetComponent<Animator>().Play("Fight");
+
+            Enemy.TakeDamage(Player.damage);
+        }
         //Player Dodge
 
     }
