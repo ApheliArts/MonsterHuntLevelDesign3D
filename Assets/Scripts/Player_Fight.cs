@@ -6,14 +6,13 @@ public class Player_Fight : MonoBehaviour
     public FightStat Enemy;
 
     //Player Attack
-    void Update()
+    void OnTriggerEnter()
     {
         //Player Attack
 
         if (Input.GetKey(KeyCode.Mouse0))
         {
             GetComponent<Animator>().Play("Fight");
-
             Enemy.TakeDamage(Player.damage);
         }
         //Player Dodge

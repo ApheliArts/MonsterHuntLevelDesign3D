@@ -7,6 +7,11 @@ public class Karkios_Behavior : MonoBehaviour
     public GameObject Karkios;
     public GameObject Player;
 
+    public GameObject SwipeAttackTrigger;
+    public GameObject EmergeAttackTrigger;
+    public GameObject HipCheckAttackTrigger;
+    public GameObject TailBashTrigger;
+
     public Transform Target;
     //Attacks
     public Transform Front;
@@ -14,15 +19,9 @@ public class Karkios_Behavior : MonoBehaviour
     public Transform Right;
     public Transform Back;
 
-    public GameObject SwipeAttackTrigger;
-    public GameObject EmergeAttackTrigger;
-    public GameObject HipCheckAttackTrigger;
-    public GameObject TailBashTrigger;
-
     public FightStat PlayerStats;
     public FightStat Monster;
 
-    public FightStat damage;
     //Layer to check for Player
     public LayerMask PlayerMask;
 
@@ -48,6 +47,11 @@ public class Karkios_Behavior : MonoBehaviour
         Idle = false;
 
         gameObject.SetActive(true);
+
+        SwipeAttackTrigger.SetActive(false);
+        EmergeAttackTrigger.SetActive(false);
+        HipCheckAttackTrigger.SetActive(false);
+        TailBashTrigger.SetActive(false);
 
         Karkios.GetComponent<Animator>().Play("Base Layer.Karkios_Flower");
         Karkios.transform.LookAt(Player.transform.position);
@@ -91,7 +95,6 @@ public class Karkios_Behavior : MonoBehaviour
         if (Physics.CheckSphere(Front.position, 5, PlayerMask) && !isAttacking && Attack > 3)
         {
             Karkios.GetComponent<Animator>().CrossFadeInFixedTime("Base Layer.Karkios_Swipe", 1f);
-
         }
         else if (Physics.CheckSphere(Front.position, 5, PlayerMask) && !isAttacking && Attack < 2)
         {
@@ -141,14 +144,5 @@ public class Karkios_Behavior : MonoBehaviour
     {
         KarkiosAudioSource.clip = KarkiosRoar;
         KarkiosAudioSource.Play();
-    }
-
-    //Hurtbox Damage Script
-    public void OnTriggerEnter()
-    {
-        if (isAttacking)
-        {
-            Player.GetComponent<FightStat>().TakeDamage(Karkios.GetComponent<FightStat>().damage);
-        }
     }
 }
