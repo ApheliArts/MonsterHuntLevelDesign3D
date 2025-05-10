@@ -19,7 +19,6 @@ public class Karkios_Behavior : MonoBehaviour
     public Transform Right;
     public Transform Back;
 
-    public FightStat PlayerStats;
     public FightStat Monster;
 
     //Layer to check for Player
@@ -87,6 +86,7 @@ public class Karkios_Behavior : MonoBehaviour
         if (Monster.currentHP < 1)
         {
             yield break;
+            //Death Animation
         }
         //This script randomizes numbers that the script will then call upon to see what attack will happen.
         float Attack = Random.Range(0f, 10f);
