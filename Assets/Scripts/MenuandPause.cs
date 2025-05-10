@@ -9,7 +9,6 @@ public class MenuandPause : MonoBehaviour
     public AudioClip ButtonSound;
     public GameObject ControlUI;
     public GameObject ButtonUI;
-
     public void LoadLevel()
     {
         StartCoroutine(LevelLoad("LevelOne"));
