@@ -18,9 +18,9 @@ public class KarkiosHit: MonoBehaviour
     }
 
     //Hurtbox Damage Script
-    public void OnTriggerEnter()
+    void OnTriggerEnter(Collider other)
     {
             Player.GetComponent<FightStat>().TakeDamage(Karkios.GetComponent<FightStat>().damage);
-        Debug.Log("PlayerHurt");
+            Debug.Log("PlayerHurt"); 
     }
 }

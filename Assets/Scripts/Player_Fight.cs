@@ -14,7 +14,7 @@ public class Player_Fight : MonoBehaviour
     }
 
     //Player Attack
-    void OnTriggerEnter()
+    void OnTriggerStay()
     {
         if (Input.GetKeyDown(KeyCode.LeftAlt))
         {
@@ -25,7 +25,6 @@ public class Player_Fight : MonoBehaviour
         if (Input.GetKey(KeyCode.Mouse0))
         {
             GetComponent<Animator>().Play("Fight");
-            Enemy.TakeDamage(Player.damage);
         }
         //Player Dodge
 
