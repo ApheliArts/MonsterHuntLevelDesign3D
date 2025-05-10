@@ -42,5 +42,25 @@ public class animationStateController : MonoBehaviour
         {
             animator.SetBool(isRunningHash, false);
         }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            Attack();
+        }
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            Block();
+        }
+    }
+
+    private void Attack()
+    {
+        animator.SetTrigger("Attack");
+    }
+
+    private void Block()
+    {
+        animator.SetTrigger("Block");
     }
 }
