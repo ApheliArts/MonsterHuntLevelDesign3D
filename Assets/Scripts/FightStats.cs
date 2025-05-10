@@ -10,7 +10,6 @@ public class FightStat : MonoBehaviour
     public int maxHP;
     public int currentHP;
 
-    public ParticleSystem particle;
     public GameObject DeathHUD;
     public GameObject FightMenuUI;
 
@@ -20,13 +19,16 @@ public class FightStat : MonoBehaviour
     public void Start()
     {
         DeathHUD.SetActive(false);
+        FightMenuUI.SetActive(true);
+
+        SetHUD();
     }
     IEnumerator MainMenu()
     {
         yield return new WaitForSeconds(5);
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene("TitleScreen");
     }
-    public void SetHUG()
+    public void SetHUD()
     {
         hpSlider.maxValue = maxHP;
         hpSlider.value = currentHP;
@@ -42,10 +44,9 @@ public class FightStat : MonoBehaviour
         }
         hpSlider.value = currentHP;
 
-        //Blood Death Screen
+        //Death Screen
         if (currentHP < 1)
         {
-            particle.Play();
             DeathHUD.SetActive(true);
             FightMenuUI.SetActive(false);
             StartCoroutine(MainMenu());

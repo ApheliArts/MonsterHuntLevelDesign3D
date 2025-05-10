@@ -14,14 +14,19 @@ public class Player_Fight : MonoBehaviour
     }
 
     //Player Attack
-    void Update()
+    void OnTriggerEnter()
     {
         if (Input.GetKeyDown(KeyCode.LeftAlt))
         {
             _animator.SetTrigger(name: "Attack");
         }
         //Player Attack
-        Enemy.TakeDamage(Player.damage);
+
+        if (Input.GetKey(KeyCode.Mouse0))
+        {
+            GetComponent<Animator>().Play("Fight");
+            Enemy.TakeDamage(Player.damage);
+        }
         //Player Dodge
 
     }

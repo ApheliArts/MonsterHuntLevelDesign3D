@@ -1,10 +1,16 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Karkios_Behavior : MonoBehaviour
 {
     public GameObject Karkios;
     public GameObject Player;
+
+    public GameObject SwipeAttackTrigger;
+    public GameObject EmergeAttackTrigger;
+    public GameObject HipCheckAttackTrigger;
+    public GameObject TailBashTrigger;
 
     public Transform Target;
     //Attacks
@@ -13,8 +19,8 @@ public class Karkios_Behavior : MonoBehaviour
     public Transform Right;
     public Transform Back;
 
-    public FightStat PlayerStats;
     public FightStat Monster;
+
     //Layer to check for Player
     public LayerMask PlayerMask;
 
@@ -41,8 +47,14 @@ public class Karkios_Behavior : MonoBehaviour
 
         gameObject.SetActive(true);
 
+        SwipeAttackTrigger.SetActive(false);
+        EmergeAttackTrigger.SetActive(false);
+        HipCheckAttackTrigger.SetActive(false);
+        TailBashTrigger.SetActive(false);
+
         Karkios.GetComponent<Animator>().Play("Base Layer.Karkios_Flower");
         Karkios.transform.LookAt(Player.transform.position);
+
     }
 
     //Rotation Script :)
@@ -62,7 +74,6 @@ public class Karkios_Behavior : MonoBehaviour
                 Karkios.transform.position = Vector3.MoveTowards(Karkios.transform.position, Player.transform.position, Speed * 1f);
             }
         }
-    
         StartCoroutine(KarkiosAttack());
         
     }
@@ -75,6 +86,7 @@ public class Karkios_Behavior : MonoBehaviour
         if (Monster.currentHP < 1)
         {
             yield break;
+            //Death Animation
         }
         //This script randomizes numbers that the script will then call upon to see what attack will happen.
         float Attack = Random.Range(0f, 10f);
