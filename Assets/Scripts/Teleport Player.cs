@@ -4,7 +4,7 @@ public class TeleportPlayer : MonoBehaviour
 {
     public GameObject Player;
     public GameObject PlayerTeleport;
-    void OnTriggerEneter()
+    void OnTriggerEnter()
     {
         Player.transform.position = PlayerTeleport.transform.position;
     }

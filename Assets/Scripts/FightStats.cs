@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -12,6 +13,7 @@ public class FightStat : MonoBehaviour
 
     public GameObject DeathHUD;
     public GameObject FightMenuUI;
+    public GameObject Monster;
 
     public Slider hpSlider;
     public bool invincible;
@@ -52,6 +54,10 @@ public class FightStat : MonoBehaviour
             StartCoroutine(MainMenu());
             Debug.Log("Died");
 
+        }
+        if (GetComponent<Karkios_Behavior>() != null && currentHP < 50)
+        {
+            Monster.GetComponent<Animator>().CrossFadeInFixedTime("Base Layer.Karkios_Bury", 1f);
         }
     }
 }
