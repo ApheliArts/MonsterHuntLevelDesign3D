@@ -16,7 +16,7 @@ public class MenuandPause : MonoBehaviour
     public IEnumerator LevelLoad(string LevelOne)
     {
         yield return new WaitForSeconds(.66f);
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
         Debug.Log("LevelLoaded");
     }
     public void QuitGame()

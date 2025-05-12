@@ -28,10 +28,7 @@ public class FightStat : MonoBehaviour
 
     public void Update()
     {
-        if (GetComponent<Karkios_Behavior>() != null && currentHP < 50)
-        {
-            Monster.GetComponent<Animator>().CrossFadeInFixedTime("Base Layer.Karkios_Bury", 1f);
-        }
+
     }
     IEnumerator MainMenu()
     {
@@ -62,6 +59,11 @@ public class FightStat : MonoBehaviour
             StartCoroutine(MainMenu());
             Debug.Log("Died");
 
+        }
+        if (GetComponent<Karkios_Behavior>() != null && currentHP < 50)
+        {
+            Monster.GetComponent<Animator>().CrossFadeInFixedTime("Base Layer.Karkios_Bury", 1f);
+            invincible = true;
         }
     }
 }

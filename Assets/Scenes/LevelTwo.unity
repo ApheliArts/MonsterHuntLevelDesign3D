@@ -2697,6 +2697,14 @@ PrefabInstance:
       propertyPath: Karkios
       value: 
       objectReference: {fileID: 1734988590}
+    - target: {fileID: 8925608717938436685, guid: 420f1abf1fb43094db51c68ed748fb30, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 0ba8d01b2dae84545b7fee68bff29d5f, type: 3}
+    - target: {fileID: 8925608717938436685, guid: 420f1abf1fb43094db51c68ed748fb30, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0ba8d01b2dae84545b7fee68bff29d5f, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
