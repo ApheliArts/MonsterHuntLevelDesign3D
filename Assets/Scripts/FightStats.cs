@@ -62,8 +62,8 @@ public class FightStat : MonoBehaviour
         }
         if (GetComponent<Karkios_Behavior>() != null && currentHP < 50)
         {
-            Monster.GetComponent<Animator>().CrossFadeInFixedTime("Base Layer.Karkios_Bury", 1f);
             invincible = true;
+            Monster.GetComponent<Animator>().CrossFadeInFixedTime("Base Layer.Karkios_Bury", 1f);
         }
     }
 }
