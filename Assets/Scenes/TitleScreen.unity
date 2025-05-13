@@ -861,7 +861,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &814650902
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1755,9 +1755,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "WASD to Move\nSpace to Block\nLeftClick to Attack\nRightClick to Drink
-    Potion\n\nHealth is in the top left and \nwill drain when the player gets attacked
-    \nand doesn't block.\n"
+  m_text: "WASD to Move\nRight Clikc to Block\nLeftClick to Attack\n\n\tHealth is
+    in the top left and \nwill drain when the player gets attacked \nand doesn't
+    block in time.\n\tMonster health is on the bottom and will take damage when you
+    hit the monster with the mid-swing of your sword.\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1784,8 +1785,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 4
-  m_fontSizeBase: 4
+  m_fontSize: 3.7
+  m_fontSizeBase: 3.7
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
