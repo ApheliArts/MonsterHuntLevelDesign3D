@@ -22,14 +22,12 @@ public class PauseMenu : MonoBehaviour
             {
                 Cursor.visible = false;
                 Cursor.lockState = CursorLockMode.Locked;
-                Player.GetComponent<PlayerMovement>().enabled = true;
                 Resume();
             }
             else
             {
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.Confined;
-                Player.GetComponent<PlayerMovement>().enabled = false;
                 Pause();
             }
         }
@@ -38,6 +36,7 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         Time.timeScale = 1f;
+        Player.GetComponent<PlayerMovement>().enabled = true;
         GameIsPaused = false;
         pauseMenuUI.SetActive(false);
     }
@@ -45,6 +44,7 @@ public class PauseMenu : MonoBehaviour
     void Pause()
     {
         pauseMenuUI.SetActive(true);
+        Player.GetComponent<PlayerMovement>().enabled = false;
         Time.timeScale = 0f;
         GameIsPaused = true;
     }

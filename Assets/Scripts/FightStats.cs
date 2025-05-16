@@ -17,6 +17,7 @@ public class FightStat : MonoBehaviour
 
     public Slider hpSlider;
     public bool invincible;
+    public bool Phase2;
 
     public void Start()
     {
@@ -61,7 +62,7 @@ public class FightStat : MonoBehaviour
             Debug.Log("Died");
 
         }
-        if (GetComponent<Karkios_Behavior>() != null && currentHP < 50 && !invincible)
+        if (GetComponent<Karkios_Behavior>() != null && currentHP < 50 && !invincible && !Phase2)
         {
             invincible = true;
             Monster.GetComponent<Animator>().CrossFadeInFixedTime("Base Layer.Karkios_Bury", 1f);

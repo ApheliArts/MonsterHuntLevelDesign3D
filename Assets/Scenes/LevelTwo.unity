@@ -441,6 +441,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 217378254}
     - target: {fileID: 2101858426786260620, guid: 3b2349ebbf1d50841b9430ca4b9916bf, type: 3}
+      propertyPath: Phase2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101858426786260620, guid: 3b2349ebbf1d50841b9430ca4b9916bf, type: 3}
       propertyPath: DeathHUD
       value: 
       objectReference: {fileID: 685898868}
