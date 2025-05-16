@@ -62,7 +62,7 @@ public class MenuandPause : MonoBehaviour
     }
     public void LoadLevel(string TitleScreen) 
     {
-        SceneManager.LoadScene(TitleScreen);
+        SceneManager.LoadScene(0);
     }
 
     private void Pause(bool pause)
