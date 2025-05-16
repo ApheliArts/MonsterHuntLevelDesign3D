@@ -682,6 +682,7 @@ MonoBehaviour:
   ButtonSound: {fileID: 8300000, guid: 053ff22f8bc91f848aa715c84e7d6f4c, type: 3}
   ControlUI: {fileID: 0}
   ButtonUI: {fileID: 0}
+  pausePanel: {fileID: 0}
 --- !u!1 &566855500
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,6 +845,51 @@ MonoBehaviour:
   ButtonSound: {fileID: 8300000, guid: 053ff22f8bc91f848aa715c84e7d6f4c, type: 3}
   ControlUI: {fileID: 814650901}
   ButtonUI: {fileID: 901078355}
+  pausePanel: {fileID: 0}
+--- !u!1 &586407165
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 586407167}
+  - component: {fileID: 586407166}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &586407166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586407165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa1d8d172d8bc8f44851219f01cbba3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &586407167
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586407165}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1084.5282, y: 514.04156, z: -892.21277}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &814650901
 GameObject:
   m_ObjectHideFlags: 0
@@ -2486,6 +2532,7 @@ MonoBehaviour:
   ButtonSound: {fileID: 8300000, guid: 053ff22f8bc91f848aa715c84e7d6f4c, type: 3}
   ControlUI: {fileID: 814650901}
   ButtonUI: {fileID: 901078355}
+  pausePanel: {fileID: 0}
 --- !u!1 &1836458663
 GameObject:
   m_ObjectHideFlags: 0
@@ -2542,6 +2589,7 @@ MonoBehaviour:
   ButtonSound: {fileID: 8300000, guid: 053ff22f8bc91f848aa715c84e7d6f4c, type: 3}
   ControlUI: {fileID: 814650901}
   ButtonUI: {fileID: 901078355}
+  pausePanel: {fileID: 0}
 --- !u!114 &1836458666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2733,3 +2781,4 @@ SceneRoots:
   - {fileID: 1543462479}
   - {fileID: 365908094}
   - {fileID: 1322842913}
+  - {fileID: 586407167}
