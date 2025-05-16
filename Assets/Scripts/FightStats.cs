@@ -3,6 +3,7 @@ using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using static UnityEngine.Rendering.DebugUI;
 
 public class FightStat : MonoBehaviour
 {
@@ -33,6 +34,9 @@ public class FightStat : MonoBehaviour
     }
     IEnumerator MainMenu()
     {
+        Monster.GetComponent<Animator>().CrossFadeInFixedTime("Base Layer.Karkios_Death", 1f);
+        yield return new WaitForSeconds(8);
+        DeathHUD.SetActive(true);
         yield return new WaitForSeconds(5);
         SceneManager.LoadScene("TitleScreen");
     }
@@ -56,7 +60,6 @@ public class FightStat : MonoBehaviour
         //Death Screen
         if (currentHP < 1)
         {
-            DeathHUD.SetActive(true);
             FightMenuUI.SetActive(false);
             StartCoroutine(MainMenu());
             Debug.Log("Died");
