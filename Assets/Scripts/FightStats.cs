@@ -43,7 +43,8 @@ public class FightStat : MonoBehaviour
     }
     public void TakeDamage(int Damage)
     {
-        currentHP -= damage;
+        if (!invincible)
+        { currentHP -= damage; }
 
         if (currentHP < 0)
         {
@@ -60,10 +61,10 @@ public class FightStat : MonoBehaviour
             Debug.Log("Died");
 
         }
-        if (GetComponent<Karkios_Behavior>() != null && currentHP < 50)
+        if (GetComponent<Karkios_Behavior>() != null && currentHP < 50 && !invincible)
         {
-            Monster.GetComponent<Animator>().CrossFadeInFixedTime("Base Layer.Karkios_Bury", 1f);
             invincible = true;
+            Monster.GetComponent<Animator>().CrossFadeInFixedTime("Base Layer.Karkios_Bury", 1f);
         }
     }
 }

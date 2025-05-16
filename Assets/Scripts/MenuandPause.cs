@@ -43,30 +43,5 @@ public class MenuandPause : MonoBehaviour
     {
         ControlUI.SetActive(false);
         ButtonUI.SetActive(true);
-
-        pausePanel.SetActive(false);
-    }
-
-    //Logan Code
-
-    public GameObject pausePanel;
-
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            Pause(true);
-            pausePanel.SetActive(true);
-
-        }
-    }
-    public void LoadLevel(string TitleScreen) 
-    {
-        SceneManager.LoadScene(TitleScreen);
-    }
-
-    private void Pause(bool pause)
-    {
-
     }
 }
