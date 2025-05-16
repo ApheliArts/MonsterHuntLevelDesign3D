@@ -34,6 +34,7 @@ public class Karkios_Behavior : MonoBehaviour
 
     public AudioSource KarkiosAudioSource;
     public AudioClip KarkiosRoar;
+    public AudioClip KarkiosDeath;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -143,6 +144,11 @@ public class Karkios_Behavior : MonoBehaviour
     public void Roar()
     {
         KarkiosAudioSource.clip = KarkiosRoar;
+        KarkiosAudioSource.Play();
+    }
+    public void DeathRoar()
+    {
+        KarkiosAudioSource.clip = KarkiosDeath;
         KarkiosAudioSource.Play();
     }
 }
