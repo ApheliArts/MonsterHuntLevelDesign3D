@@ -11,5 +11,6 @@ public class Exit : MonoBehaviour
     public void LevelLoad()
     {
         SceneManager.LoadScene(2);
+        SceneManager.UnloadSceneAsync(1);
     }
 }
