@@ -35,9 +35,9 @@ public class FightStat : MonoBehaviour
     IEnumerator MainMenu()
     {
         Monster.GetComponent<Animator>().CrossFadeInFixedTime("Base Layer.Karkios_Death", 1f);
-        yield return new WaitForSeconds(8);
+        yield return new WaitForSeconds(7.5f);
         DeathHUD.SetActive(true);
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
         SceneManager.LoadScene("TitleScreen");
     }
     public void SetHUD()
@@ -58,8 +58,9 @@ public class FightStat : MonoBehaviour
         hpSlider.value = currentHP;
 
         //Death Screen
-        if (currentHP < 1)
+        if (currentHP < 1 && !invincible)
         {
+            invincible = true;
             FightMenuUI.SetActive(false);
             StartCoroutine(MainMenu());
             Debug.Log("Died");
